@@ -50,6 +50,7 @@ pip install --no-cache-dir -r requirements.txt
 
 ### 3. Build the Docker Image (For Containerized Execution)
 ```sh
+docker pull python:3.10-slim
 docker build -t valeo-doc-assistant .
 ```
 

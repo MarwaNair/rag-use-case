@@ -125,10 +125,6 @@ def main():
         print("\n" + "-"*50 + "\n")
 
 if __name__ == "__main__":
-    # Support both interactive mode and single-question CLI arguments
-    if len(sys.argv) > 1:
-        # Process command-line question
-        print(answer_question(" ".join(sys.argv[1:])))
-    else:
-        # Start interactive session
-        main()
+    
+    # Start interactive session
+    main()
