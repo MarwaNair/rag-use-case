@@ -39,16 +39,17 @@ To run the program, ensure you have the following dependencies installed:
 
 ### 1. Clone the Repository
 ```sh
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/MarwaNair/rag-use-case.git
+cd rag-use-case
 ```
 
 ### 2. Install Dependencies (For Local Execution)
 ```sh
 pip install --no-cache-dir -r requirements.txt
 ```
+OR
 
-### 3. Build the Docker Image (For Containerized Execution)
+### 2. Build the Docker Image (For Containerized Execution)
 ```sh
 docker build -t valeo-doc-assistant .
 ```
@@ -56,32 +57,23 @@ docker build -t valeo-doc-assistant .
 ## Execution
 
 ### Running Locally
-To run the assistant interactively:
 ```sh
 python app.py
 ```
-To process a single command-line question:
-```sh
-python app.py "What's Valeo's approach to autonomous driving?"
-```
+
 
 ### Running with Docker
-To start an interactive session:
+
 ```sh
-docker run -it --rm valeo-doc-assistant
-```
-To process a single command-line question:
-```sh
-docker run --rm valeo-doc-assistant "What's Valeo's approach to autonomous driving?"
+docker run --rm -it valeo-doc-assistant
 ```
 
 ## Example Usage
 
 #### Example Input:
 ```sh
-python app.py "What's Valeo's approach to autonomous driving?"
+python app.py
 ```
-
 #### Example Output:
 ```
 Welcome to Valeo Document Assistant!
@@ -104,7 +96,6 @@ drive without a human driver at any time.
 
 ## Technical Notes
 
-- The assistant supports both interactive and command-line execution.
 - Initial setup may take some time (model downloads + index creation).
 - Uses GPT-2-medium (355M parameters) because of ressource constraits.
 
