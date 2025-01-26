@@ -87,9 +87,17 @@ python app.py "What are the key financial highlights of Valeo in 2022?"
 Welcome to Valeo Document Assistant!
 Type 'exit' to quit.
 
-Enter your question: What are the key financial highlights of Valeo in 2022?
+Enter your question: What's Valeo's approach to autonomous driving?
 
-Answer: In 2022, Valeo reported revenue of X billion euros, with a net profit of Y million euros. Key growth areas included Z sector and strategic partnerships in W industry.
+Answer: We have developed a system for the automatic 
+driving of automobiles and trucks that uses artificial 
+intelligence and the Blue Ocean Strategy. This system is 
+in its early stages in the planning phase, but it will become 
+easier to drive as the technology improves. It 
+is based on the design of an autonomous driving system that we have developed 
+in collaboration with a number of automotive and engineering 
+companies. We have developed a basic system that should be able to 
+drive without a human driver at any time.
 
 --------------------------------------------------
 ```
