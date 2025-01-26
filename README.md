@@ -62,7 +62,7 @@ python app.py
 ```
 To process a single command-line question:
 ```sh
-python app.py "What is the revenue of Valeo in 2022?"
+python app.py "What's Valeo's approach to autonomous driving?"
 ```
 
 ### Running with Docker
@@ -72,14 +72,14 @@ docker run -it --rm valeo-doc-assistant
 ```
 To process a single command-line question:
 ```sh
-docker run --rm valeo-doc-assistant "What is the revenue of Valeo in 2022?"
+docker run --rm valeo-doc-assistant "What's Valeo's approach to autonomous driving?"
 ```
 
 ## Example Usage
 
 #### Example Input:
 ```sh
-python app.py "What are the key financial highlights of Valeo in 2022?"
+python app.py "What's Valeo's approach to autonomous driving?"
 ```
 
 #### Example Output:
