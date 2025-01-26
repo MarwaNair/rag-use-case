@@ -39,16 +39,17 @@ To run the program, ensure you have the following dependencies installed:
 
 ### 1. Clone the Repository
 ```sh
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/MarwaNair/rag-use-case.git
+cd rag-use-case
 ```
 
 ### 2. Install Dependencies (For Local Execution)
 ```sh
 pip install --no-cache-dir -r requirements.txt
 ```
+OR
 
-### 3. Build the Docker Image (For Containerized Execution)
+### 2. Build the Docker Image (For Containerized Execution)
 ```sh
 docker pull python:3.10-slim
 docker build -t valeo-doc-assistant .
@@ -57,47 +58,45 @@ docker build -t valeo-doc-assistant .
 ## Execution
 
 ### Running Locally
-To run the assistant interactively:
 ```sh
 python app.py
 ```
-To process a single command-line question:
-```sh
-python app.py "What is the revenue of Valeo in 2022?"
-```
+
 
 ### Running with Docker
-To start an interactive session:
+
 ```sh
-docker run -it --rm valeo-doc-assistant
-```
-To process a single command-line question:
-```sh
-docker run --rm valeo-doc-assistant "What is the revenue of Valeo in 2022?"
+docker run --rm -it valeo-doc-assistant
 ```
 
 ## Example Usage
 
 #### Example Input:
 ```sh
-python app.py "What are the key financial highlights of Valeo in 2022?"
+python app.py
 ```
-
 #### Example Output:
 ```
 Welcome to Valeo Document Assistant!
 Type 'exit' to quit.
 
-Enter your question: What are the key financial highlights of Valeo in 2022?
+Enter your question: What's Valeo's approach to autonomous driving?
 
-Answer: In 2022, Valeo reported revenue of X billion euros, with a net profit of Y million euros. Key growth areas included Z sector and strategic partnerships in W industry.
+Answer: We have developed a system for the automatic 
+driving of automobiles and trucks that uses artificial 
+intelligence and the Blue Ocean Strategy. This system is 
+in its early stages in the planning phase, but it will become 
+easier to drive as the technology improves. It 
+is based on the design of an autonomous driving system that we have developed 
+in collaboration with a number of automotive and engineering 
+companies. We have developed a basic system that should be able to 
+drive without a human driver at any time.
 
 --------------------------------------------------
 ```
 
 ## Technical Notes
 
-- The assistant supports both interactive and command-line execution.
 - Initial setup may take some time (model downloads + index creation).
 - Uses GPT-2-medium (355M parameters) because of ressource constraits.
 
